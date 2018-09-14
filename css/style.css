@@ -73,6 +73,67 @@ header {
     margin-right:-2rem;
 }
 
+@media only screen and (min-width: 500px){
+    .mobilenav{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .container {
+       width: auto;
+   }
+
+   header{
+       padding-top: 0rem;
+   }
+
+      .headline {
+          padding: 0.75rem 4rem;
+          margin-right: 2rem;
+          font-size: 1.33rem;
+      }
+     
+}
+
+@media only screen and (max-width: 780px){
+    header {
+        background-size: 900px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .logo span {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    header {
+        background-position: 20%;
+        height: 17rem;
+    }
+
+    .headline {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0rem;
+        margin-top: 9rem;
+        margin-right: 0rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+}
+
 /*Services*/
 .services {
     display: flex;
@@ -94,7 +155,6 @@ header {
    padding-bottom: 1rem;
 }
 
-
 .paper-icon img {
     width: 3.5rem;
 }
@@ -102,6 +162,19 @@ header {
 .ruler-icon img, .truck-icon img{
     width: 5rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .services{
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .service-item{
+        margin: 0.75rem;
+        font-size: 0.8rem;
+        width: auto;
+        height: auto;
+    }
 
 
 /*Information: philosophy and appointments*/
@@ -123,6 +196,27 @@ header {
     margin-bottom: 1rem;
 }
 
+
+@media only screen and (max-width: 500px) {
+    .info{
+        flex-direction: column;
+        margin: 0rem;
+    }
+
+    .infoitem{
+        padding: 0rem;
+        width: auto;
+        margin-bottom: 4rem;
+    }
+
+    .infoitem p{
+        font-size: 0.9rem;
+    }
+
+    .info-title{
+        width: auto;
+    }
+}
 /*Footer: copyright*/
 footer img{
     padding-right: 1rem;
@@ -132,4 +226,16 @@ footer img{
 footer{
     background-color: azure;
     padding: 4rem;
+}
+
+@media only screen and (max-width: 500px){
+    footer span {
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
